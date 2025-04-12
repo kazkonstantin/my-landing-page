@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Vision Board</title>
+    <style>
+        /* Контейнер для картинок, чтобы они располагались в 2 ряда */
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Два столбца */
+            gap: 10px; /* Пробел между картинками */
+        }
+        
+        /* Стили для картинок */
+        .image-container img {
+            width: 100%; /* Изменяет картинку на весь доступный размер контейнера */
+            height: auto; /* Сохраняет пропорции */
+            max-width: 100%; /* Ограничивает размер */
+        }
+
+        /* Увеличение размера изображений */
+        .image-container img {
+            transform: scale(4); /* Увеличиваем картинку в 4 раза */
+            object-fit: cover; /* Позволяет картинке заполнять контейнер, сохраняя пропорции */
+        }
+    </style>
+</head>
+<body>
+    <h1>My Vision Board</h1>
+    
+    <div class="image-container">
+        <img src="images/image1.jpg" alt="First image">
+        <img src="images/image2.jpg" alt="Second image">
+        <img src="images/image3.jpg" alt="Third image">
+        <img src="images/image4.jpg" alt="Fourth image">
+    </div>
+    
+</body>
+</html>
 
