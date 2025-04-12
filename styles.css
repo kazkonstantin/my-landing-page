@@ -1,45 +1,44 @@
-/* Basic styling for the page */
 body {
-    background-color: #f4f4f4; /* Light grey background */
-    font-family: 'Playfair Display', serif; /* Elegant old money font */
+    font-family: 'Spectral SC', serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1500px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
     text-align: center;
 }
 
-/* Title styling */
 h1 {
-    font-size: 48px;
-    margin-top: 40px;
-    color: #3a3a3a;
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 40px;
 }
 
-/* Image container for a random layout (no grid) */
-.image-container {
-    display: flex;
-    flex-wrap: wrap;
+.images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
     justify-content: center;
-    gap: 0; /* No gap between images */
-    margin-top: 30px;
 }
 
-/* Style for each image */
-.image-container img {
-    width: auto;
-    max-width: 100%; /* Keep image size proportional */
+.images img {
+    width: 100%;
     height: auto;
-    margin: 10px; /* Allow for spacing around images */
-    object-fit: cover; /* Make sure images fill the space without distortion */
+    border-radius: 10px;
 }
 
-/* Quote styling */
-blockquote {
-    font-size: 24px;
+.quote {
     font-style: italic;
-    margin-top: 40px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #3a3a3a;
-    font-family: 'Playfair Display', serif; /* Same font as the title */
+    font-size: 1.5em;
+    margin-top: 30px;
+    color: #333;
 }
