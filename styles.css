@@ -1,41 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Vision Board</title>
-    <style>
-        /* Контейнер для картинок, чтобы они располагались в 2 ряда */
-        .image-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); /* Два столбца */
-            gap: 10px; /* Пробел между картинками */
-        }
-        
-        /* Стили для картинок */
-        .image-container img {
-            width: 100%; /* Изменяет картинку на весь доступный размер контейнера */
-            height: auto; /* Сохраняет пропорции */
-            max-width: 100%; /* Ограничивает размер */
-        }
+/* Setting the background color */
+body {
+    background-color: #f0f0f0; /* Pale grey background */
+    font-family: Arial, sans-serif; /* Set a clean font */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
-        /* Увеличение размера изображений */
-        .image-container img {
-            transform: scale(4); /* Увеличиваем картинку в 4 раза */
-            object-fit: cover; /* Позволяет картинке заполнять контейнер, сохраняя пропорции */
-        }
-    </style>
-</head>
-<body>
-    <h1>My Vision Board</h1>
-    
-    <div class="image-container">
-        <img src="images/image1.jpg" alt="First image">
-        <img src="images/image2.jpg" alt="Second image">
-        <img src="images/image3.jpg" alt="Third image">
-        <img src="images/image4.jpg" alt="Fourth image">
-    </div>
-    
-</body>
-</html>
+/* Container for images to make them in a grid of 2 columns */
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between images */
+    padding: 20px; /* Padding around the grid */
+}
 
+/* Styling for images */
+.image-container img {
+    width: 100%; /* Images take full width of the container */
+    height: auto; /* Keep image proportions */
+    max-width: 100%; /* Limit image width */
+    transform: scale(1.5); /* Slightly enlarge images */
+    object-fit: cover; /* Fill container without distorting the image */
+}
+
+/* Header styling */
+h1 {
+    font-size: 36px;
+    margin-top: 20px;
+    color: #333; /* Darker text color */
+}
